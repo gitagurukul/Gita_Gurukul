@@ -116,7 +116,7 @@ export default function ProfilePage() {
       <div className="max-w-4xl mx-auto w-full px-6">
         
         <AnimatedSection className="mb-10 text-center flex flex-col items-center">
-          <h1 className="font-display font-black text-3xl lg:text-5xl text-brand-dark mb-4">
+          <h1 className="font-display font-normal text-3xl lg:text-5xl text-brand-dark mb-4">
             Dashboard
           </h1>
           <p className="font-body text-gray-600 text-lg">
@@ -132,7 +132,7 @@ export default function ProfilePage() {
                 <User size={32} />
               </div>
               <div>
-                <h2 className="font-display font-bold text-2xl text-white">
+                <h2 className="font-display font-normal text-2xl text-white">
                   {profile?.name || "Spiritual Seeker"}
                 </h2>
                 <div className="flex items-center gap-2 mt-1 text-brand-primary">
@@ -152,7 +152,7 @@ export default function ProfilePage() {
 
           <div className="p-8">
             <div className="flex items-center justify-between mb-6 border-b border-gray-100 pb-2">
-              <h3 className="font-display font-bold text-xl text-brand-dark">
+              <h3 className="font-display font-normal text-xl text-brand-dark">
                 Shipping Details
               </h3>
               {!isEditing && (
@@ -228,7 +228,7 @@ export default function ProfilePage() {
         {/* PAST PURCHASES CARD */}
         <AnimatedSection delay={200} className="bg-white rounded-lg shadow-sm border border-brand-tan/20 overflow-hidden">
           <div className="p-8">
-            <h3 className="font-display font-bold text-xl text-brand-dark mb-6 flex items-center gap-2">
+            <h3 className="font-display font-normal text-xl text-brand-dark mb-6 flex items-center gap-2">
               <Package className="text-brand-primary" />
               Past Purchases
             </h3>
@@ -247,7 +247,7 @@ export default function ProfilePage() {
                   <div key={idx} className="border border-gray-100 rounded-lg p-5 hover:border-brand-primary/40 transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="font-display font-bold text-brand-dark">{order.razorpay_order_id || order.id}</span>
+                        <span className="font-display font-normal text-brand-dark">{order.razorpay_order_id || order.id}</span>
                         <span className="bg-[#f0fdf4] text-[#166534] text-xs font-bold px-2.5 py-0.5 rounded-full border border-[#bbf7d0]">
                           {order.status || "Completed"}
                         </span>
@@ -258,7 +258,7 @@ export default function ProfilePage() {
                       </p>
                     </div>
                     <div className="text-left sm:text-right">
-                      <p className="font-display font-bold text-lg text-brand-primary flex items-center sm:justify-end">
+                      <p className="font-display font-normal text-lg text-brand-primary flex items-center sm:justify-end">
                         <IndianRupee size={16} /> {order.amount}
                       </p>
                     </div>

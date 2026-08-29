@@ -17,7 +17,7 @@ function ReceiptContent() {
         <CheckCircle size={40} />
       </div>
 
-      <h1 className="font-display font-black text-3xl lg:text-4xl text-brand-dark mb-4">
+      <h1 className="font-display font-normal text-3xl lg:text-4xl text-brand-dark mb-4">
         Payment Successful!
       </h1>
       <p className="font-body text-gray-600 text-lg mb-8">
@@ -25,7 +25,7 @@ function ReceiptContent() {
       </p>
 
       <div className="w-full bg-gray-50 border border-gray-100 rounded-md p-6 text-left mb-8">
-        <h3 className="font-display font-bold text-lg text-brand-dark mb-4 border-b border-gray-200 pb-2">Order Summary</h3>
+        <h3 className="font-display font-normal text-lg text-brand-dark mb-4 border-b border-gray-200 pb-2">Order Summary</h3>
         <div className="flex justify-between items-center mb-2 font-body text-gray-700">
           <span>Order ID:</span>
           <span className="font-semibold font-display break-all ml-4 text-right">{orderId}</span>

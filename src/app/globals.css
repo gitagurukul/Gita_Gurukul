@@ -1,4 +1,4 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
 @theme {
   --color-brand-primary: #E29A2C;
@@ -9,8 +9,8 @@
   --color-brand-tan: #F5DED2;
   --color-brand-footer: #112113;
   
-  --font-display: var(--font-cormorant);
-  --font-body: var(--font-inter);
+  --font-display: var(--font-inter);
+  --font-body: var(--font-cormorant);
   --font-nav: var(--font-inter);
   --font-button: var(--font-inter);
 }

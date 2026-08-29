@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AuthProvider } from "@/context/AuthContext";
@@ -19,8 +20,6 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   title: {
@@ -86,6 +85,7 @@ export default function RootLayout({
         <AuthProvider>
           <Navbar />
           <LoginModal />
+          <WhatsAppWidget />
           <main className="flex-1 flex flex-col w-full min-h-screen">
             {children}
           </main>

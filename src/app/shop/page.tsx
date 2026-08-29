@@ -35,9 +35,9 @@ export default function Shop() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      <div className="max-w-[1280px] w-full mx-auto pt-[140px] pb-8 px-6 lg:px-[60px]">
+      <div className="max-w-[1280px] w-full mx-auto pt-[100px] pb-8 px-6 lg:px-[60px]">
         <div className="flex flex-col gap-4 mb-12 lg:mb-16 text-center lg:text-left items-center lg:items-start">
-          <h1 className="font-display font-black text-5xl lg:text-[64px] leading-[1.1] tracking-tight text-brand-dark">
+          <h1 className="font-display font-normal text-5xl lg:text-[64px] leading-[1.1] tracking-tight text-brand-dark">
             Curated Editions
           </h1>
           <p className="font-body text-base lg:text-lg text-gray-700">
@@ -60,7 +60,7 @@ export default function Shop() {
             
             <div className="w-full lg:flex-1 flex flex-col gap-6 text-center lg:text-left items-center lg:items-start">
               <div>
-                <h2 className="font-display font-black text-4xl lg:text-[48px] leading-[1.1] tracking-tight text-brand-dark mb-4">Gita Gurukul Diary</h2>
+                <h2 className="font-display font-normal text-4xl lg:text-[48px] leading-[1.1] tracking-tight text-brand-dark mb-4">Gita Gurukul Diary</h2>
                 <p className="font-body text-lg text-gray-600 max-w-lg">
                   A perfect companion for daily reflection. Features 27 handpicked shlokas carefully curated to bring calmness and focus.
                 </p>
@@ -76,7 +76,7 @@ export default function Shop() {
                   >
                     <Minus size={20} />
                   </button>
-                  <span className="font-display font-bold text-2xl w-8 text-center text-brand-dark">{quantity}</span>
+                  <span className="font-display font-normal text-2xl w-8 text-center text-brand-dark">{quantity}</span>
                   <button 
                     onClick={handleIncrease}
                     disabled={quantity >= 10}
@@ -90,8 +90,8 @@ export default function Shop() {
               <div className="mt-4 pt-6 border-t border-gray-100 w-full max-w-md flex flex-col gap-4 items-center lg:items-start">
                 <div className="flex items-center gap-2">
                   <span className="font-body text-gray-500 text-lg">Total Price:</span>
-                  <span className="font-display font-black text-3xl text-brand-primary">
-                    ₹ {totalPrice}
+                  <span className="font-display font-normal text-3xl text-brand-primary flex items-center gap-1">
+                    <span>₹</span> <span>{totalPrice}</span>
                   </span>
                 </div>
                 

@@ -36,19 +36,19 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="bg-white min-h-screen pt-[140px] pb-20">
+    <div className="bg-white min-h-screen pt-[100px] pb-20">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-[60px]">
-        <h1 className="font-display font-black text-4xl lg:text-5xl text-brand-dark mb-4 text-center">
+        <h1 className="font-display font-normal text-4xl lg:text-5xl text-brand-dark mb-4 text-center">
           Frequently Asked Questions
         </h1>
-        <p className="font-body text-lg text-brand-primary font-medium text-center mb-12 whitespace-nowrap overflow-x-auto no-scrollbar">
+        <p className="font-body text-lg text-brand-primary font-medium text-center mb-12">
           Learn more about our mission, our Bhagavad Gita diaries, and our roots in Rishikesh.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-brand-tan/10 p-6 lg:p-8 rounded-lg shadow-sm border border-brand-tan/20">
-              <h3 className="font-display font-bold text-xl lg:text-2xl text-brand-dark mb-3">
+              <h3 className="font-display font-normal text-xl lg:text-2xl text-brand-dark mb-3">
                 {faq.question}
               </h3>
               <p className="font-body text-gray-700 leading-relaxed">

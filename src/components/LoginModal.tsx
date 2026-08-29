@@ -118,7 +118,7 @@ export default function LoginModal() {
         
         {/* Header */}
         <div className="bg-[#faf7f2] px-6 py-4 flex items-center justify-between border-b border-brand-tan/20">
-          <h2 className="font-display font-bold text-xl text-brand-dark flex items-center gap-2">
+          <h2 className="font-display font-normal text-xl text-brand-dark flex items-center gap-2">
             <ShieldCheck className="text-brand-primary" />
             {step === "ADDRESS" ? "Complete Your Profile" : "Secure Login"}
           </h2>
