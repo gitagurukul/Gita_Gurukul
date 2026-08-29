@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className="font-display font-normal text-5xl lg:text-[64px] leading-[1.1] tracking-tight text-brand-dark">
               A diary worth the success
             </h1>
-            <p className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-gray-950">
+            <p className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-gray-950">
               Discover the transformative power of ancient Vedic wisdom. This Bhagavad Gita diary contains 27 handpicked shlokas carefully curated to guide your daily reflection and spiritual growth. As you engage with these profound teachings, your mind grows steadier, calmer, and more focused. A perfect companion for anyone seeking mindfulness, inner peace, and a deeper connection to Krishna consciousness in the modern world, one page at a time.
             </p>
             
@@ -52,7 +52,7 @@ export default function Home() {
           <h2 className="font-display font-normal text-3xl lg:text-[40px] leading-[1.1] tracking-tight text-white mb-6">
             Why Thousands Begin Their Day With the Gita
           </h2>
-          <p className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-brand-tan">
+          <p className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-brand-tan">
             The teachings of the Bhagavad Gita aren't just meant to be read—they are meant to be lived.<br />
             Our unique spiritual journal transforms timeless Hindu philosophy and ancient Vedic wisdom into practical daily exercises. This guided reflection process helps you build better habits, strengthen your mindset, and cultivate <span>deep inner peace.</span><br />
             Whether you're a student, professional, entrepreneur, or a dedicated spiritual seeker in Rishikesh or beyond, each day offers one small step toward a more balanced, mindful, and successful life rooted in Krishna consciousness.
@@ -64,7 +64,7 @@ export default function Home() {
           
           <div className="w-full lg:flex-1 flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
             <h2 className="font-display font-normal text-5xl lg:text-[64px] leading-[1.1] tracking-tight text-brand-dark">About Us</h2>
-            <p className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-gray-950">
+            <p className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-gray-950">
               Gita Gurukul was created to help you build a life of calmness, focus, success, and devotion. Founder Papiya Ranabijayini Samal spent seven years studying the Gita in depth, and from its 754 shlokas, selected the 27 that offer the clearest path to mastering calmness and achieving greatness in life.
             </p>
             <Link 
@@ -104,7 +104,7 @@ export default function Home() {
             <h2 className="font-display font-normal text-5xl lg:text-[64px] leading-[1.1] tracking-tight text-brand-dark">
               Support Our Mission
             </h2>
-            <p className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-gray-950">
+            <p className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-gray-950">
               Gita Gurukul is a dedicated e-commerce and donation platform designed to spread the wisdom of the Bhagavad Gita. By creating a secure account, users can seamlessly purchase our curated spiritual diaries, manage their order history, and make charitable donations to support spiritual seekers in Rishikesh. Your account allows us to securely process payments and deliver physical products directly to your shipping address.
             </p>
             <Link 

@@ -19,7 +19,7 @@ export default function About() {
                   <div className="absolute left-0 -bottom-1 h-[4px] w-[85%] bg-brand-primary"></div>
                 </h1>
               </div>
-              <p className="font-body font-semibold text-lg lg:text-base text-gray-500 mt-2 max-w-[250px] mx-auto lg:mx-0">
+              <p className="font-body font-semibold text-lg lg:text-lg text-gray-500 mt-2 max-w-[250px] mx-auto lg:mx-0">
                 Born from a desire to make sacred texts accessible.
               </p>
             </div>
@@ -27,7 +27,7 @@ export default function About() {
             {/* Right Column (Boxes) */}
             <div className="w-full lg:w-[65%] flex flex-col gap-6">
               <div className="bg-[#F3F4F6] p-8 lg:p-12 rounded-md">
-                <p className="font-body font-semibold text-xl lg:text-lg text-gray-950 leading-relaxed">
+                <p className="font-body font-semibold text-xl lg:text-xl text-gray-950 leading-relaxed">
                   Founder Papiya Ranabijayini Samal spent seven years immersed in the study of the Gita. Reading, reflecting, and returning to its 754 shlokas again and again, she began to notice which verses consistently brought clarity in moments of doubt, and steadiness in moments of change. From this study, she selected 27 shlokas, the foundation of the Gita diary, chosen not for their popularity but for their power to hold a person through everyday life.
                 </p>
               </div>
@@ -44,7 +44,7 @@ export default function About() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
           </svg>
           <h2 className="font-display font-normal text-3xl lg:text-[40px] leading-[1.1] tracking-tight text-white mb-4">Our Vision</h2>
-          <p className="font-body font-semibold text-xl lg:text-lg text-brand-tan leading-relaxed">
+          <p className="font-body font-semibold text-xl lg:text-xl text-brand-tan leading-relaxed">
             To foster a global community rooted in Dharma, where individuals find balance and strength through the systematic study and application of eternal wisdom. We envision a world where the principles of the Gita inspire mindful action and universal well-being.
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function About() {
           </div>
           <div className="w-full lg:flex-1 flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
             <h2 className="font-display font-normal text-3xl lg:text-[40px] leading-[1.1] tracking-tight text-brand-dark">Our Purpose</h2>
-            <p className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-gray-950">
+            <p className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-gray-950">
               Gita Gurukul was born from a simple belief: that the wisdom of the Bhagavad Gita, when engaged with daily, can quietly reshape how a person moves through the world. Not through grand gestures, but through steady, focused presence.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function About() {
         <AnimatedSection className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16">
           <div className="w-full lg:flex-1 flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
             <h2 className="font-display font-normal text-3xl lg:text-[40px] leading-[1.1] tracking-tight text-brand-dark">Our Approach</h2>
-            <div className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-gray-950 flex flex-col gap-2 text-center lg:text-left">
+            <div className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-gray-950 flex flex-col gap-2 text-center lg:text-left">
               <p>Everything we make is built around three ideas:</p>
               <p>Depth over volume. Twenty-seven shlokas, chosen with care, rather than an overwhelming compilation.</p>
               <p>Practice over theory. A diary format that invites daily engagement, not a one-time read.</p>
@@ -108,7 +108,7 @@ export default function About() {
           </div>
           <div className="w-full lg:flex-1 flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
             <h2 className="font-display font-normal text-3xl lg:text-[40px] leading-[1.1] tracking-tight text-brand-dark">Who We Serve</h2>
-            <p className="font-body font-semibold text-xl lg:text-lg leading-relaxed text-gray-950">
+            <p className="font-body font-semibold text-xl lg:text-xl leading-relaxed text-gray-950">
               Gita Gurukul is for anyone seeking to bring more calm, focus, and meaning into daily life, whether you are new to the Gita or have walked with it for years. There is no prerequisite of knowledge, only a willingness to sit with the text and let it work.
             </p>
           </div>

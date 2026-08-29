@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         
-        <div className="font-body font-semibold text-xl lg:text-lg text-black space-y-8 leading-relaxed">
+        <div className="font-body font-semibold text-xl lg:text-xl text-black space-y-8 leading-relaxed">
           <section>
             <h2 className="font-display font-normal text-2xl text-brand-dark mb-3">1. Introduction</h2>
             <p>

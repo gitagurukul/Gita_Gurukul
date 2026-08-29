@@ -40,7 +40,7 @@ export default function Shop() {
           <h1 className="font-display font-normal text-5xl lg:text-[64px] leading-[1.1] tracking-tight text-brand-dark">
             Curated Editions
           </h1>
-          <p className="font-body font-semibold text-xl lg:text-lg text-black">
+          <p className="font-body font-semibold text-xl lg:text-xl text-black">
             Discover our collection of beautifully bound Bhagavad Gita diaries, designed for reflection and daily wisdom.
           </p>
         </div>

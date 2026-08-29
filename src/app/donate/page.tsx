@@ -56,7 +56,7 @@ export default function Donate() {
             <div className="w-full lg:w-1/2 flex flex-col gap-8">
               <div>
                 <h3 className="font-display font-normal text-2xl lg:text-3xl mb-4 text-brand-dark">Why Donate?</h3>
-                <p className="font-body font-semibold text-lg lg:text-base text-black leading-relaxed">
+                <p className="font-body font-semibold text-lg lg:text-lg text-black leading-relaxed">
                   Your support is vital. By donating to Gita Gurukul, you are directly investing in the curation, design, and distribution of resources that bring ancient Vedic wisdom into modern daily lives.
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function Donate() {
                   </div>
                   <div>
                     <h4 className="font-display font-normal text-[15px] lg:text-base text-brand-dark mb-1">Support that reaches those who need it most.</h4>
-                    <p className="font-body font-semibold text-base lg:text-sm text-gray-950 leading-relaxed">
+                    <p className="font-body font-semibold text-base lg:text-base text-gray-950 leading-relaxed">
                       Every donation to Gita Gurukul goes directly toward two things: spreading Krishna consciousness through community celebration, and supporting spiritual seekers who have little else.
                     </p>
                   </div>
@@ -80,7 +80,7 @@ export default function Donate() {
                   </div>
                   <div>
                     <h4 className="font-display font-normal text-[15px] lg:text-base text-brand-dark mb-1">Bhagavad Gita Jayanti</h4>
-                    <p className="font-body font-semibold text-base lg:text-sm text-gray-950 leading-relaxed">
+                    <p className="font-body font-semibold text-base lg:text-base text-gray-950 leading-relaxed">
                       Each December, we mark Bhagavad Gita Jayanti with a large yagnya and a community food distribution for devotees. This is one of our most meaningful times of year, made possible entirely through donor support. Your contribution helps us hold this celebration with the scale and sincerity it deserves.
                     </p>
                   </div>
@@ -92,7 +92,7 @@ export default function Donate() {
                   </div>
                   <div>
                     <h4 className="font-display font-normal text-[15px] lg:text-base text-brand-dark mb-1">Where Your Contribution Goes</h4>
-                    <p className="font-body font-semibold text-base lg:text-sm text-gray-950 leading-relaxed">
+                    <p className="font-body font-semibold text-base lg:text-base text-gray-950 leading-relaxed">
                       Every rupee donated is directed toward these two efforts, the Gita Jayanti celebration and ongoing support for seekers in Rishikesh. No portion is set aside for anything beyond these purposes.
                     </p>
                   </div>
@@ -213,7 +213,7 @@ export default function Donate() {
           <h1 className="font-display font-normal text-4xl lg:text-[56px] leading-[1.1] tracking-tight text-white drop-shadow-md">
             Support the Journey of Eternal Wisdom
           </h1>
-          <p className="font-body font-semibold text-xl lg:text-lg text-white max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="font-body font-semibold text-xl lg:text-xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-md">
             Your generous contribution helps us continue spreading the profound teachings of the Bhagavad Gita, creating tools for mindful reflection and spiritual growth.
           </p>
         </div>
@@ -229,7 +229,7 @@ export default function Donate() {
               <h2 className="font-display font-normal text-4xl lg:text-[48px] leading-[1.1] tracking-tight text-brand-dark mb-2">
                 Who We Serve
               </h2>
-              <p className="font-body font-semibold text-xl lg:text-lg text-black leading-relaxed">
+              <p className="font-body font-semibold text-xl lg:text-xl text-black leading-relaxed">
                 Beyond our annual celebration, our team works year-round with spiritual seekers in the Himalayas, particularly in Rishikesh. Many arrive with little more than their devotion. We help provide:
               </p>
             </div>
@@ -255,7 +255,7 @@ export default function Donate() {
               />
             </div>
             <div className="w-full lg:flex-1 flex flex-col gap-4 text-center lg:text-left">
-              <div className="font-body font-semibold text-xl lg:text-lg text-black leading-relaxed space-y-2">
+              <div className="font-body font-semibold text-xl lg:text-xl text-black leading-relaxed space-y-2">
                 <p>Food, so daily needs don't interrupt spiritual practice</p>
                 <p>Clothing, especially through harsh Himalayan seasons</p>
                 <p>Shelter and sleeping comfort, so rest is not a struggle</p>
