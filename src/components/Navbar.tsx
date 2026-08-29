@@ -22,8 +22,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full shadow-md fixed top-0 z-50 flex flex-col">
-      <div className="w-full bg-brand-dark">
+    <div className="w-full fixed top-0 z-50 flex flex-col transition-all duration-300 backdrop-blur-md bg-brand-dark/95 shadow-[0_4px_30px_rgba(0,0,0,0.1)] border-b border-brand-primary/10">
+      <div className="w-full">
         <nav className="w-full max-w-[1280px] mx-auto h-[85px] flex justify-between items-center px-6 lg:px-[60px]">
         
         {/* Standardized Logo */}
@@ -57,7 +57,7 @@ export default function Navbar() {
           <Link href="/donate" className="hidden sm:block">
             <button 
               type="button" 
-              className="bg-brand-primary text-white border-none font-button font-bold text-lg px-6 md:px-10 py-3 rounded-md shadow-md hover:bg-opacity-90 hover:shadow-lg transition-all cursor-pointer"
+              className="bg-brand-primary text-white border-none font-button font-bold text-lg px-6 md:px-10 py-3 rounded-md shadow-md hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(226,154,44,0.3)] transition-all duration-300 cursor-pointer"
             >
               Donate
             </button>
@@ -123,7 +123,7 @@ export default function Navbar() {
           >
             <button 
               type="button" 
-              className="w-full bg-brand-primary text-white font-button font-bold text-xl px-6 py-4 rounded-md shadow-md hover:bg-opacity-90 transition-all cursor-pointer"
+              className="w-full bg-brand-primary text-white font-button font-bold text-xl px-6 py-4 rounded-md shadow-md hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(226,154,44,0.3)] transition-all duration-300 cursor-pointer"
             >
               Donate Now
             </button>

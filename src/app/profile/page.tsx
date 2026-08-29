@@ -119,13 +119,13 @@ export default function ProfilePage() {
           <h1 className="font-display font-normal text-3xl lg:text-5xl text-brand-dark mb-4">
             Dashboard
           </h1>
-          <p className="font-body text-gray-600 text-lg">
+          <p className="font-body font-semibold text-gray-950 text-lg">
             Manage your account and view past purchases.
           </p>
         </AnimatedSection>
 
         {/* PROFILE CARD */}
-        <AnimatedSection delay={100} className="bg-white rounded-lg shadow-sm border border-brand-tan/20 overflow-hidden mb-10">
+        <AnimatedSection delay={100} className="bg-[#FDFBF7] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-brand-primary/20 overflow-hidden mb-10">
           <div className="bg-brand-dark px-8 py-6 flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center text-white">
@@ -144,7 +144,7 @@ export default function ProfilePage() {
             
             <button 
               onClick={handleLogout}
-              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors border border-gray-600 hover:border-gray-400 rounded-md px-4 py-2 font-body text-sm"
+              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors border border-gray-600 hover:border-gray-400 rounded-md px-4 py-2 font-body font-semibold text-sm"
             >
               <LogOut size={16} /> Logout
             </button>
@@ -158,7 +158,7 @@ export default function ProfilePage() {
               {!isEditing && (
                 <button 
                   onClick={() => setIsEditing(true)}
-                  className="flex items-center gap-2 text-brand-primary hover:text-brand-dark transition-colors font-body text-sm font-semibold"
+                  className="flex items-center gap-2 text-brand-primary hover:text-black transition-colors font-body text-sm font-semibold"
                 >
                   <Edit3 size={16} /> Edit Details
                 </button>
@@ -169,33 +169,33 @@ export default function ProfilePage() {
               <form onSubmit={handleSave} className="animate-in fade-in slide-in-from-top-4 duration-300">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div className="flex flex-col gap-2">
-                    <label className="font-body text-sm font-semibold text-gray-700">Full Name</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" required />
+                    <label className="font-body text-sm font-semibold text-black">Full Name</label>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" required />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="font-body text-sm font-semibold text-gray-700">Email Address</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" />
+                    <label className="font-body text-sm font-semibold text-black">Email Address</label>
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" />
                   </div>
                   <div className="flex flex-col gap-2 md:col-span-2">
-                    <label className="font-body text-sm font-semibold text-gray-700">Phone Number (Verified)</label>
-                    <input type="text" value={user.phoneNumber || ""} disabled className="border border-gray-200 bg-gray-100 rounded-md p-3 font-body text-sm text-gray-500 cursor-not-allowed" />
+                    <label className="font-body text-sm font-semibold text-black">Phone Number (Verified)</label>
+                    <input type="text" value={user.phoneNumber || ""} disabled className="border border-gray-200 bg-gray-100 rounded-md p-3 font-body font-semibold text-sm text-gray-500 cursor-not-allowed" />
                   </div>
                   <div className="flex flex-col gap-2 md:col-span-2">
-                    <label className="font-body text-sm font-semibold text-gray-700">Complete Address</label>
-                    <textarea name="address" value={formData.address} onChange={handleChange} rows={2} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary resize-none" required />
+                    <label className="font-body text-sm font-semibold text-black">Complete Address</label>
+                    <textarea name="address" value={formData.address} onChange={handleChange} rows={2} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary resize-none" required />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="font-body text-sm font-semibold text-gray-700">State</label>
-                    <input type="text" name="state" value={formData.state} onChange={handleChange} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" required />
+                    <label className="font-body text-sm font-semibold text-black">State</label>
+                    <input type="text" name="state" value={formData.state} onChange={handleChange} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" required />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="font-body text-sm font-semibold text-gray-700">Pincode</label>
-                    <input type="text" name="pincode" value={formData.pincode} onChange={handleChange} maxLength={6} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" required />
+                    <label className="font-body text-sm font-semibold text-black">Pincode</label>
+                    <input type="text" name="pincode" value={formData.pincode} onChange={handleChange} maxLength={6} className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" required />
                   </div>
                 </div>
                 <div className="flex justify-end gap-4 pt-4 border-t border-gray-100">
-                  <button type="button" onClick={() => setIsEditing(false)} className="text-gray-500 hover:text-brand-dark font-body font-semibold px-4">Cancel</button>
-                  <button type="submit" disabled={saving} className="bg-brand-primary text-white font-button font-bold px-8 py-3 rounded-md shadow-md hover:bg-opacity-90 transition-all flex items-center gap-2">
+                  <button type="button" onClick={() => setIsEditing(false)} className="text-gray-500 hover:text-black font-body font-semibold px-4">Cancel</button>
+                  <button type="submit" disabled={saving} className="bg-brand-primary text-white font-button font-bold px-8 py-3 rounded-md shadow-md hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(226,154,44,0.3)] transition-all duration-300 flex items-center gap-2">
                     {saving ? <Loader2 className="animate-spin" size={20} /> : "Save Changes"}
                   </button>
                 </div>
@@ -204,21 +204,21 @@ export default function ProfilePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 animate-in fade-in duration-300">
                 <div>
                   <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Address</p>
-                  <p className="font-body text-brand-dark text-[15px]">{profile?.address || "No address provided."}</p>
+                  <p className="font-body font-semibold text-black text-[15px]">{profile?.address || "No address provided."}</p>
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">State & Pincode</p>
-                  <p className="font-body text-brand-dark text-[15px]">
+                  <p className="font-body font-semibold text-black text-[15px]">
                     {profile?.state ? `${profile.state}, ${profile.pincode}` : "Not provided"}
                   </p>
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Email</p>
-                  <p className="font-body text-brand-dark text-[15px]">{profile?.email || "No email provided."}</p>
+                  <p className="font-body font-semibold text-black text-[15px]">{profile?.email || "No email provided."}</p>
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Phone Number</p>
-                  <p className="font-body text-brand-dark text-[15px]">{user.phoneNumber}</p>
+                  <p className="font-body font-semibold text-black text-[15px]">{user.phoneNumber}</p>
                 </div>
               </div>
             )}
@@ -226,7 +226,7 @@ export default function ProfilePage() {
         </AnimatedSection>
 
         {/* PAST PURCHASES CARD */}
-        <AnimatedSection delay={200} className="bg-white rounded-lg shadow-sm border border-brand-tan/20 overflow-hidden">
+        <AnimatedSection delay={200} className="bg-[#FDFBF7] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-brand-primary/20 overflow-hidden">
           <div className="p-8">
             <h3 className="font-display font-normal text-xl text-brand-dark mb-6 flex items-center gap-2">
               <Package className="text-brand-primary" />
@@ -238,7 +238,7 @@ export default function ProfilePage() {
                 <Loader2 className="animate-spin text-brand-primary" size={32} />
               </div>
             ) : orders.length === 0 ? (
-              <div className="text-center py-8 text-gray-500 font-body">
+              <div className="text-center py-8 text-gray-500 font-body font-semibold">
                 No purchases found yet.
               </div>
             ) : (
@@ -252,8 +252,8 @@ export default function ProfilePage() {
                           {order.status || "Completed"}
                         </span>
                       </div>
-                      <p className="font-body text-sm text-gray-600 mb-1">{order.items}</p>
-                      <p className="font-body text-xs text-gray-400 flex items-center gap-1">
+                      <p className="font-body font-semibold text-sm text-gray-950 mb-1">{order.items}</p>
+                      <p className="font-body font-semibold text-xs text-gray-400 flex items-center gap-1">
                         <Calendar size={12} /> Ordered on {order.date ? new Date(order.date.toDate()).toLocaleDateString() : "Recently"}
                       </p>
                     </div>

@@ -17,7 +17,7 @@ export default function Footer() {
             className="w-[160px] lg:w-[200px] h-auto object-contain"
             />
           </Link>
-          <p className="font-body text-sm text-brand-tan/80">
+          <p className="font-body font-semibold text-sm text-brand-tan">
             Dedicated to spreading eternal wisdom through mindful tools designed for the modern seeker.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-brand-primary transition-colors">Terms of Service</Link>
             <Link href="/faq" className="hover:text-brand-primary transition-colors">FAQ</Link>
           </div>
-          <p className="font-body text-xs text-brand-tan/50">
+          <p className="font-body font-semibold text-xs text-brand-tan/50">
             © 2026 Gita Gurukul. All rights reserved.
           </p>
         </div>

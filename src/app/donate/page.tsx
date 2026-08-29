@@ -44,10 +44,10 @@ export default function Donate() {
     }
   };
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-[#FDFBF7]">
       
       {/* How to give? Section */}
-      <div className="w-full bg-white pt-[120px] pb-16 lg:pt-[160px] lg:pb-24">
+      <div className="w-full bg-[#FDFBF7] pt-[120px] pb-16 lg:pt-[160px] lg:pb-24">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-[60px] flex flex-col gap-12 lg:gap-16">
 
           <AnimatedSection className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
@@ -56,7 +56,7 @@ export default function Donate() {
             <div className="w-full lg:w-1/2 flex flex-col gap-8">
               <div>
                 <h3 className="font-display font-normal text-2xl lg:text-3xl mb-4 text-brand-dark">Why Donate?</h3>
-                <p className="font-body text-sm lg:text-base text-gray-700 leading-relaxed">
+                <p className="font-body font-semibold text-lg lg:text-base text-black leading-relaxed">
                   Your support is vital. By donating to Gita Gurukul, you are directly investing in the curation, design, and distribution of resources that bring ancient Vedic wisdom into modern daily lives.
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function Donate() {
                   </div>
                   <div>
                     <h4 className="font-display font-normal text-[15px] lg:text-base text-brand-dark mb-1">Support that reaches those who need it most.</h4>
-                    <p className="font-body text-xs lg:text-sm text-gray-600 leading-relaxed">
+                    <p className="font-body font-semibold text-base lg:text-sm text-gray-950 leading-relaxed">
                       Every donation to Gita Gurukul goes directly toward two things: spreading Krishna consciousness through community celebration, and supporting spiritual seekers who have little else.
                     </p>
                   </div>
@@ -80,7 +80,7 @@ export default function Donate() {
                   </div>
                   <div>
                     <h4 className="font-display font-normal text-[15px] lg:text-base text-brand-dark mb-1">Bhagavad Gita Jayanti</h4>
-                    <p className="font-body text-xs lg:text-sm text-gray-600 leading-relaxed">
+                    <p className="font-body font-semibold text-base lg:text-sm text-gray-950 leading-relaxed">
                       Each December, we mark Bhagavad Gita Jayanti with a large yagnya and a community food distribution for devotees. This is one of our most meaningful times of year, made possible entirely through donor support. Your contribution helps us hold this celebration with the scale and sincerity it deserves.
                     </p>
                   </div>
@@ -92,7 +92,7 @@ export default function Donate() {
                   </div>
                   <div>
                     <h4 className="font-display font-normal text-[15px] lg:text-base text-brand-dark mb-1">Where Your Contribution Goes</h4>
-                    <p className="font-body text-xs lg:text-sm text-gray-600 leading-relaxed">
+                    <p className="font-body font-semibold text-base lg:text-sm text-gray-950 leading-relaxed">
                       Every rupee donated is directed toward these two efforts, the Gita Jayanti celebration and ongoing support for seekers in Rishikesh. No portion is set aside for anything beyond these purposes.
                     </p>
                   </div>
@@ -101,7 +101,7 @@ export default function Donate() {
             </div>
             
             {/* RIGHT COLUMN: Donation Form */}
-            <div className="w-full lg:w-1/2 bg-[#F9F9F8] p-8 lg:p-10 shadow-sm border border-brand-border/10 rounded-sm">
+            <div className="w-full lg:w-1/2 bg-[#F9F9F8] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-brand-primary/20 rounded-2xl">
               <h3 className="font-display font-normal text-2xl lg:text-3xl text-brand-dark mb-6">
                 Make a Contribution
               </h3>
@@ -109,7 +109,7 @@ export default function Donate() {
               <form className="flex flex-col gap-6">
                 {/* Amount Selection */}
                 <div className="flex flex-col gap-3">
-                  <label className="font-body text-xs font-semibold text-brand-dark uppercase tracking-wide">Select Amount</label>
+                  <label className="font-body text-xs font-semibold text-black uppercase tracking-wide">Select Amount</label>
                   <div className="grid grid-cols-3 gap-3">
                     {['101', '501', '1001', '1501', '2001'].map((amountStr) => {
                       const amountVal = parseInt(amountStr);
@@ -132,7 +132,7 @@ export default function Donate() {
                         </button>
                       );
                     })}
-                    <div className="flex items-center border border-[#D98A36]/30 bg-white rounded-sm px-3 py-3 col-span-1">
+                    <div className="flex items-center border border-[#D98A36]/30 bg-[#FDFBF7] rounded-sm px-3 py-3 col-span-1">
                       <span className="text-gray-500 mr-1 text-sm">₹</span>
                       <input 
                         type="number" 
@@ -158,22 +158,22 @@ export default function Donate() {
                 {/* Personal Info */}
                 <div className="flex flex-col gap-4 mt-2">
                   <div className="flex flex-col gap-1">
-                    <label className="font-body text-xs font-semibold text-brand-dark">Full Name <span className="text-red-500">*</span></label>
+                    <label className="font-body text-xs font-semibold text-black">Full Name <span className="text-red-500">*</span></label>
                     <input 
                       type="text" 
                       placeholder="Enter your full name" 
                       value={donorName}
                       onChange={(e) => setDonorName(e.target.value)}
-                      className="border border-gray-200 bg-transparent rounded-sm p-3 font-body text-sm focus:outline-brand-primary" 
+                      className="border border-gray-200 bg-transparent rounded-sm p-3 font-body font-semibold text-sm focus:outline-brand-primary" 
                     />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <label className="font-body text-xs font-semibold text-brand-dark">Message (Optional)</label>
+                    <label className="font-body text-xs font-semibold text-black">Message (Optional)</label>
                     <textarea 
                       placeholder="Write a message to accompany your donation..." 
                       value={donorMessage}
                       onChange={(e) => setDonorMessage(e.target.value)}
-                      className="border border-gray-200 bg-transparent rounded-sm p-3 font-body text-sm focus:outline-brand-primary resize-none h-24"
+                      className="border border-gray-200 bg-transparent rounded-sm p-3 font-body font-semibold text-sm focus:outline-brand-primary resize-none h-24"
                     />
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function Donate() {
                   <button 
                     type="button"
                     onClick={handleCheckout}
-                    className="w-full bg-[#D98A36] text-white font-display font-normal text-lg py-4 rounded-sm shadow-md hover:bg-opacity-90 transition-all"
+                    className="w-full bg-[#D98A36] text-white font-display font-normal text-lg py-4 rounded-sm shadow-md hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(226,154,44,0.3)] transition-all duration-300"
                   >
                     Donate Now
                   </button>
@@ -213,14 +213,14 @@ export default function Donate() {
           <h1 className="font-display font-normal text-4xl lg:text-[56px] leading-[1.1] tracking-tight text-white drop-shadow-md">
             Support the Journey of Eternal Wisdom
           </h1>
-          <p className="font-body text-base lg:text-lg text-white max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="font-body font-semibold text-xl lg:text-lg text-white max-w-3xl mx-auto leading-relaxed drop-shadow-md">
             Your generous contribution helps us continue spreading the profound teachings of the Bhagavad Gita, creating tools for mindful reflection and spiritual growth.
           </p>
         </div>
       </div>
 
       {/* Who We Serve Section (Zig-zag Layout) */}
-      <div className="w-full bg-white py-16 lg:py-24">
+      <div className="w-full bg-[#FDFBF7] py-16 lg:py-24">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-[60px] flex flex-col gap-12 lg:gap-20">
           
           {/* Row 1: Text Left, Image Right */}
@@ -229,11 +229,11 @@ export default function Donate() {
               <h2 className="font-display font-normal text-4xl lg:text-[48px] leading-[1.1] tracking-tight text-brand-dark mb-2">
                 Who We Serve
               </h2>
-              <p className="font-body text-base lg:text-[17px] text-gray-700 leading-relaxed">
+              <p className="font-body font-semibold text-xl lg:text-lg text-black leading-relaxed">
                 Beyond our annual celebration, our team works year-round with spiritual seekers in the Himalayas, particularly in Rishikesh. Many arrive with little more than their devotion. We help provide:
               </p>
             </div>
-            <div className="w-full lg:w-1/2 h-[250px] lg:h-[300px] relative rounded-sm overflow-hidden shadow-md">
+            <div className="w-full lg:w-1/2 h-[250px] lg:h-[300px] relative rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-brand-primary/10">
               <Image 
                 src="/images/tong_kbp_xpommw690he_unsplash_1.png" 
                 alt="Monks gathering" 
@@ -246,7 +246,7 @@ export default function Donate() {
           {/* Row 2: Image Left, Text Right */}
           {/* Mobile: Image Top -> flex-col */}
           <AnimatedSection className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-            <div className="w-full lg:w-1/2 h-[250px] lg:h-[300px] relative rounded-sm overflow-hidden shadow-md">
+            <div className="w-full lg:w-1/2 h-[250px] lg:h-[300px] relative rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-brand-primary/10">
               <Image 
                 src="/images/manojkumar_bathala_jqfrgnf7cqo_unsplash_1.png" 
                 alt="Chariot" 
@@ -255,7 +255,7 @@ export default function Donate() {
               />
             </div>
             <div className="w-full lg:flex-1 flex flex-col gap-4 text-center lg:text-left">
-              <div className="font-body text-base lg:text-[17px] text-gray-700 leading-relaxed space-y-2">
+              <div className="font-body font-semibold text-xl lg:text-lg text-black leading-relaxed space-y-2">
                 <p>Food, so daily needs don't interrupt spiritual practice</p>
                 <p>Clothing, especially through harsh Himalayan seasons</p>
                 <p>Shelter and sleeping comfort, so rest is not a struggle</p>

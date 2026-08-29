@@ -114,7 +114,7 @@ export default function LoginModal() {
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in duration-200 p-4">
       <Toaster position="top-center" />
       
-      <div className={`bg-white rounded-lg shadow-2xl w-full transition-all duration-300 animate-in zoom-in-95 overflow-hidden ${step === "ADDRESS" ? "max-w-2xl" : "max-w-md"}`}>
+      <div className={`bg-[#FDFBF7] rounded-lg shadow-2xl w-full transition-all duration-300 animate-in zoom-in-95 overflow-hidden ${step === "ADDRESS" ? "max-w-2xl" : "max-w-md"}`}>
         
         {/* Header */}
         <div className="bg-[#faf7f2] px-6 py-4 flex items-center justify-between border-b border-brand-tan/20">
@@ -135,7 +135,7 @@ export default function LoginModal() {
           {step === "SIGN_IN" && (
             <div className="flex flex-col gap-6">
               <div className="text-center mb-2">
-                <p className="font-body text-gray-600">
+                <p className="font-body font-semibold text-gray-950">
                   Sign in securely with your Google account to continue.
                 </p>
               </div>
@@ -143,7 +143,7 @@ export default function LoginModal() {
               <button 
                 onClick={handleGoogleSignIn}
                 disabled={loading}
-                className="w-full bg-white border border-gray-300 text-gray-700 font-body font-semibold text-base py-3 px-4 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-primary flex items-center justify-center gap-3 transition-all"
+                className="w-full bg-[#FDFBF7] border border-gray-300 text-black font-body font-semibold text-base py-3 px-4 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-primary flex items-center justify-center gap-3 transition-all"
               >
                 {loading ? (
                   <Loader2 className="animate-spin text-gray-500" size={20} />
@@ -178,14 +178,14 @@ export default function LoginModal() {
           {step === "ADDRESS" && (
             <form onSubmit={handleSaveAddress} className="flex flex-col gap-6">
               <div className="text-center mb-6">
-                <p className="font-body text-gray-600">
+                <p className="font-body font-semibold text-gray-950">
                   We need your shipping details to complete the setup.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
-                  <label className="font-body text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <label className="font-body text-sm font-semibold text-black flex items-center gap-2">
                     <User size={16} className="text-brand-primary" /> Full Name
                   </label>
                   <input 
@@ -193,13 +193,13 @@ export default function LoginModal() {
                     value={addressData.name}
                     onChange={(e) => setAddressData({...addressData, name: e.target.value})}
                     placeholder="Enter your full name" 
-                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" 
+                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" 
                     required
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="font-body text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <label className="font-body text-sm font-semibold text-black flex items-center gap-2">
                     <Mail size={16} className="text-brand-primary" /> Email Address
                   </label>
                   <input 
@@ -207,12 +207,12 @@ export default function LoginModal() {
                     value={addressData.email}
                     onChange={(e) => setAddressData({...addressData, email: e.target.value})}
                     placeholder="Enter your email" 
-                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" 
+                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" 
                   />
                 </div>
                 
                 <div className="flex flex-col gap-2 md:col-span-2">
-                  <label className="font-body text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <label className="font-body text-sm font-semibold text-black flex items-center gap-2">
                     <Phone size={16} className="text-brand-primary" /> Phone Number
                   </label>
                   <input 
@@ -220,13 +220,13 @@ export default function LoginModal() {
                     value={addressData.phone}
                     onChange={(e) => setAddressData({...addressData, phone: e.target.value.replace(/\D/g, '')})}
                     placeholder="Enter your mobile number" 
-                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" 
+                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" 
                     required
                   />
                 </div>
 
                 <div className="flex flex-col gap-2 md:col-span-2">
-                  <label className="font-body text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <label className="font-body text-sm font-semibold text-black flex items-center gap-2">
                     <MapPin size={16} className="text-brand-primary" /> Complete Address
                   </label>
                   <textarea 
@@ -234,32 +234,32 @@ export default function LoginModal() {
                     onChange={(e) => setAddressData({...addressData, address: e.target.value})}
                     placeholder="House No, Street, Landmark" 
                     rows={2}
-                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary resize-none" 
+                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary resize-none" 
                     required
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="font-body text-sm font-semibold text-gray-700">State</label>
+                  <label className="font-body text-sm font-semibold text-black">State</label>
                   <input 
                     type="text" 
                     value={addressData.state}
                     onChange={(e) => setAddressData({...addressData, state: e.target.value})}
                     placeholder="Enter your state" 
-                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" 
+                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" 
                     required
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="font-body text-sm font-semibold text-gray-700">Pincode</label>
+                  <label className="font-body text-sm font-semibold text-black">Pincode</label>
                   <input 
                     type="text" 
                     value={addressData.pincode}
                     onChange={(e) => setAddressData({...addressData, pincode: e.target.value})}
                     placeholder="6-digit pincode" 
                     maxLength={6}
-                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body text-sm focus:outline-brand-primary" 
+                    className="border border-gray-200 bg-gray-50 rounded-md p-3 font-body font-semibold text-sm focus:outline-brand-primary" 
                     required
                   />
                 </div>

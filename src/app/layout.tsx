@@ -80,7 +80,7 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${inter.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-body bg-white text-black">
+      <body className="min-h-full flex flex-col font-body font-semibold bg-[#FDFBF7] text-brand-dark">
         <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="beforeInteractive" />
         <AuthProvider>
           <Navbar />

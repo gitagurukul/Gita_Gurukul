@@ -2,13 +2,13 @@
 
 export default function Terms() {
   return (
-    <div className="bg-white min-h-screen pt-[100px] pb-20">
+    <div className="bg-[#FDFBF7] min-h-screen pt-[100px] pb-20">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-[60px]">
         <h1 className="font-display font-normal text-4xl lg:text-5xl text-brand-dark mb-8 text-center">
           Terms & Conditions
         </h1>
         
-        <div className="font-body text-base lg:text-lg text-gray-700 space-y-8 leading-relaxed">
+        <div className="font-body font-semibold text-xl lg:text-lg text-black space-y-8 leading-relaxed">
           <section>
             <h2 className="font-display font-normal text-2xl text-brand-dark mb-3">1. Introduction</h2>
             <p>
